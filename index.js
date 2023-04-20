@@ -96,7 +96,7 @@ const createComment = (comment) =>{
 
 const postComment = async (comment) =>{
     const response = await fetch(`${url}/${postId}/comments`,{
-         method: "Post", 
+         method: "POST", 
          body: comment,
          headers:{
         "Content-type": "application/json"
